@@ -37,8 +37,8 @@ console.log(obj);//{ name: 'harsh', age: 23, city: 'delhi', uid: 12, Symbol(uid)
 //big int is used after storing integers abpve max safe integer value in js which is 2^53-1
 //recision bnaye rkhne k lie use big int 
 let a = 123334444555555555n;
-a + 3n;
-console.log(a + 3n);//123334444555555555n
+a+=3n;//assignment operator bhi use kr skte h big int m
+console.log(a);//123334444555555555n
 
 //------------------------------<>-----------------------------//
 let u = 12;

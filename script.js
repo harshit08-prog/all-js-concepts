@@ -45,10 +45,10 @@ let k = 23;
 console.log(e);
 var e = 13;//no error like in let because the undefined part is above console.log always thats hoisting
 //do parts
-var e = undefined;
+var e = undefined;//HOISTING
 e = 13;
 //let bhi declare hojata h phle hi usme bhi hoisting hoti h islie error says that it cannot acces the variable before initialization
-let z = 90;
+let z = 90; 
 {
     let z = 45;
     console.log("inside:", z);
