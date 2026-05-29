@@ -33,4 +33,4 @@ for (i=1; i<27; i++) {
         continue;//continue loop ko skip kr deta hai
     }
     console.log(i);
-} 
+}  
