@@ -59,3 +59,26 @@ function bgh(a ,b ,c ,...val){
     console.log(a,b,c,val)
 }
 bgh(1,2,3,4,5,6,7,8);//output---1 2 3 [ 4, 5, 6, 7, 8 ]
+
+//return
+function ui(v1) {
+    return 34 + v1;//if we do console.log only it shows value but return give value to use it further too
+}
+let val = ui(89);
+console.log(val) ;
+console.log(val + 24);
+//FIRST CLASS FUNCTIONS
+//TREATING AN ARGUMENTS VALUE AS A FUNCTION
+function uk(v4){
+    v4();
+}
+uk(function () {
+console.log("heyaaaa");
+});
+//UK is a higher order function here cuz it accepts a function in parameter
+function yk(){
+ return function() {
+    console.log("hellu");
+ }
+}
+yk()();
