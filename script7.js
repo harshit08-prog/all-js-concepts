@@ -82,3 +82,4 @@ function yk(){
  }
 }
 yk()();
+//PURE AND IMPURE FUNCTIONS
