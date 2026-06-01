@@ -82,4 +82,47 @@ function yk(){
  }
 }
 yk()();
-//PURE AND IMPURE FUNCTIONS
+//PURE FUNCTIONS
+let c = 90;
+function abvn() {
+     console.log("heyheheehyhyh")
+}//hence this function is not effecting the variable c
+//impure function
+function hui() {
+    c++;
+}//thiswill change the variable c
+
+//CLOSURES
+function huihui() {
+    let v1 = 78;
+    return function() {
+        console.log(34 + v1);
+    }
+}
+const vl = huihui();
+vl();
+// huihui() ───► creates v1 = 78
+//      │
+//      └──► returns inner() ───► remembers v1
+//                                 │
+//                                 └──► console.log(34 + v1)
+
+//LEXICAL SCOPING
+//FUNCTION KE ANDER FUNCTION K ANDER FUNCTION OR JO VARIABLE JIS FUNCTION ME BNA H VO VHA SE LEKE END TK OF FUNCTIONS USE HOSKTA H YE H USKI LEXICAL SCOPING
+function uu() {
+    let a = 9;// a is in outer function so  it can be used in 3 functions
+    function ii() {
+        let b = 7;//b can be used in two functions
+        function kk() {
+            let c = 90;//c can be used in only one function
+        }
+    }
+}
+//--------------------IIFE(immediately invoked function expression)--------------------------------------------------------------\\
+//function ko naam mt do bracket m band krke immediately call krdo
+(function () {
+
+}) ()
+//HOISTING HAPPENS IN FUNCTIONS TOO
+// WE CAN CALL  A FUNCTION BEFORE DECLARING IT
+//BUT WE CANNOT CALL A FUNCTION EXPRESSION BEFORE INITIALIZATION  IT WILL SHOW ERROR
