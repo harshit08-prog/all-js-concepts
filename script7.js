@@ -126,3 +126,9 @@ function uu() {
 //HOISTING HAPPENS IN FUNCTIONS TOO
 // WE CAN CALL  A FUNCTION BEFORE DECLARING IT
 //BUT WE CANNOT CALL A FUNCTION EXPRESSION BEFORE INITIALIZATION  IT WILL SHOW ERROR
+//IIFE IS USED TO MAKE ISOLATE VARIABLES
+(function() {
+   const password = "harshie123";
+    console.log(password);
+}) ();//IIFE IS FUNCTION SCOPED SO PASSWORD VARIABLE IS NOT ACCESSIBLE OUTSIDE THE FUNCTION
+//console.log(password);//error password is not defined because it is in IIFE and it is isolated from global scope
