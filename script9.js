@@ -60,4 +60,4 @@ function counter() {
     console.log(c());
 //3 Weather Widget + Sort Viz Vanilla JS + Fetch API + Java Sorting DOM manipulation + algorithms Live weather app — zero frameworks
 //4 JS Expense Tracker + DS Demo JS ES6+ + localStorage + Java LL/Stack Advanced JS + data structures Expense tracker — pure JS, no libs
-//
+//done with functions basics
