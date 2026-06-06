@@ -38,3 +38,9 @@ let sgf = skf.map(function(value){
     return 3;
 })
 console.log(sgf);//skf array ke har element ko 3 se replace krke naya array bnana
+let sf = sdf.filter(function(value){
+    if(value>5)
+        return true;//sdf array ke har element me se 5 se bde element nikalna
+    
+})
+console.log(sf);
