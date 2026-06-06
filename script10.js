@@ -34,3 +34,7 @@ let skf = sdf.map(function(value){
     return value*2;//sdf array ke har element ko 2 se multiply krke naya array bnana
 })
 console.log(skf);
+let sgf = skf.map(function(value){
+    return 3;
+})
+console.log(sgf);//skf array ke har element ko 3 se replace krke naya array bnana
