@@ -38,9 +38,30 @@ let sgf = skf.map(function(value){
     return 3;
 })
 console.log(sgf);//skf array ke har element ko 3 se replace krke naya array bnana
-let sf = sdf.filter(function(value){
+let sf = sdf.map(function(value){
     if(value>5)
-        return true;//sdf array ke har element me se 5 se bde element nikalna
-    
+        return 67;//sdf array ke har element me se 5 se bde element ko 67 ans baki ko undefined krke naya array bnana    
 })
 console.log(sf);
+//map() = transform all elements.
+
+//filter() = pick only the ones that match.
+//FILTER
+//humesha return krega true ya false
+let sfg = sdf.filter(function (value){
+    if(value>5)
+        return true;//ab isme baki sb ki jgha undefined ni likha ayega
+})
+console.log(sfg);
+let sff = sdf.filter(function (value){
+    if(value>5)
+        return false;
+    else 
+        return true;//ye ni likha to blank array dfega [];
+});
+console.log(sff);
+//reduce
+let sh = sdf.reduce(function(accumulator,val){//accumulaator me value update hoti rhegi sum hoke
+    return accumulator + val;
+}, 0);//sdf array ke sare element ko add krke ek value bnana, 0 isliye likha kyuki ye starting value h accumulator ki
+console.log(sh);
