@@ -100,3 +100,13 @@ console.log(a,b,c,d,f);
 let arr3 = [1,2,3];
 let arr4 = [...arr3,4,5,6];//arr3 ke sare element ko arr4 me add krna aur uske baad 4,5,6 bhi add krna
 console.log(arr4);
+//sort this arrAY ALPHABETICALLY and then REVERSE it
+let arr5 = ["banana","apple","grapes","orange"];
+arr5.sort().reverse();
+console.log(arr5);
+// use .map() to square each number in this array
+let arr6 = [1,2,3,4,5];
+let squaredarr = arr6.map(function(val) {
+    return val*val;
+})
+console.log(squaredarr);
