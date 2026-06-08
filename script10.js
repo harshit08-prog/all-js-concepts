@@ -76,3 +76,20 @@ let neww = array.find(function(val ) {
     return val.key===1;//array me se pehla element jiska key 1 hoga usko return krna
 })
 console.log(neww);
+//SOME Return Value:
+
+//true → if any element satisfies the condition.
+
+//false → if none do.
+let sss = sdf.some(function (val) {
+    return val>99;//sdf array me se koi element 99 se bda h to true ni to false return krna
+})
+console.log(sss);//OUTPUT FALSE
+//EVERY 
+//true → if all elements satisfy the condition.
+
+//false → if any one fails. 
+let ssss = sdf.every(function (val) {
+    return val>0;//sdf array ke sare element 0 se bde h to true ni to false return krna
+})
+console.log(ssss);//OUTPUT TRUE 
