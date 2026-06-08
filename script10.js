@@ -93,3 +93,10 @@ let ssss = sdf.every(function (val) {
     return val>0;//sdf array ke sare element 0 se bde h to true ni to false return krna
 })
 console.log(ssss);//OUTPUT TRUE 
+//destructuring
+let [a,b,c,d,,f] = sdf;//sdf array ke elements ko a,b,c,d,e,f me assign krna
+console.log(a,b,c,d,f);  
+//  spread operator
+let arr3 = [1,2,3];
+let arr4 = [...arr3,4,5,6];//arr3 ke sare element ko arr4 me add krna aur uske baad 4,5,6 bhi add krna
+console.log(arr4);
