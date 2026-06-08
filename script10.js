@@ -65,3 +65,14 @@ let sh = sdf.reduce(function(accumulator,val){//accumulaator me value update hot
     return accumulator + val;
 }, 0);//sdf array ke sare element ko add krke ek value bnana, 0 isliye likha kyuki ye starting value h accumulator ki
 console.log(sh);
+//find
+let ss = sdf.find(function(val) {
+    return val>5;//sdf array me se pehla element jo 5 se bda hoga usko return krna
+})
+console.log(ss);
+//make an object 
+let array = [{ id: 1, key:1}, { id: 2, key:2}, {id:3 , key:1}];
+let neww = array.find(function(val ) {
+    return val.key===1;//array me se pehla element jiska key 1 hoga usko return krna
+})
+console.log(neww);
