@@ -65,4 +65,3 @@
       }
       let obj5 = {...obj4, country : "india"};//obj4 ke sare properties ko obj5 me copy krna aur uske baad country property bhi add krna
       console.log(obj5);//output { name: 'satyarth', age: 19, city: 'delhi', country: 'india' }
-    
