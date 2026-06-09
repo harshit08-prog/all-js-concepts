@@ -75,3 +75,16 @@
       obj7.adress.city = "kolkata";//obj7 ke adress ke city ko kolkata karna
       console.log(obj2.adress.city);//output kolkata
       console.log(obj7.adress.city);//output kolkata
+      //optional chaining
+      //acces objects properties even if an intermediate property doesn't exist
+      let object = {
+         name : "harshit"
+      }
+      console.log(object?.name);//output harshit
+      //COMPUTED PROPERTIES HOW TO TAKE AND USE OUTSIDE VARIABLE IN OBJECTS
+      let role = "admin";
+      let hh = {
+         name : "satyarth",
+         [role]: "harshit"
+      }
+console.log(hh);//output { name: 'satyarth', admin: 'harshit' }
