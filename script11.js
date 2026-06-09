@@ -64,4 +64,14 @@
          city : "delhi"  
       }
       let obj5 = {...obj4, country : "india"};//obj4 ke sare properties ko obj5 me copy krna aur uske baad country property bhi add krna
-      console.log(obj5);//output { name: 'satyarth', age: 19, city: 'delhi', country: 'india' }
+      console.log(obj5);//output { name: 'satyarth', age: 19, city: 'delhi', country: 'india' } 
+      //DEEP CLONING
+      let obj6 = JSON.parse(JSON.stringify(obj2));//obj2 ko string me convert krna aur uske baad usko parse krke obj6 me assign krna
+       obj6.adress.city = "mumbai";//obj6 ke adress ke city ko mumbai karna
+      console.log(obj2.adress.city);//output delhi
+      console.log(obj6.adress.city);//output mumbai
+      //shallow cloning
+      let obj7 = {...obj2};//obj2 ke sare properties ko obj7 me copy krna
+      obj7.adress.city = "kolkata";//obj7 ke adress ke city ko kolkata karna
+      console.log(obj2.adress.city);//output kolkata
+      console.log(obj7.adress.city);//output kolkata
