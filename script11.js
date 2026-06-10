@@ -88,3 +88,9 @@
          [role]: "harshit"
       }
 console.log(hh);//output { name: 'satyarth', admin: 'harshit' }
+ //destructure the kry "first-name"as a variable called firstName
+   let obj8 = {
+      "first-name" : "satyarth",
+   }
+   let {"first-name" : firstName} = obj8;
+   console.log(firstName);//output  
