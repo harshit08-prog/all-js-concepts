@@ -92,5 +92,4 @@ console.log(hh);//output { name: 'satyarth', admin: 'harshit' }
    let obj8 = {
       "first-name" : "satyarth",
    }
-   let {"first-name" : firstName} = obj8;
-   console.log(firstName);//output  
+    
