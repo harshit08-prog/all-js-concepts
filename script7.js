@@ -92,20 +92,7 @@ function hui() {
     c++;
 }//thiswill change the variable c
 
-//CLOSURES
-function huihui() {
-    let v1 = 78;
-    return function() {
-        console.log(34 + v1);
-    }
-}
-const vl = huihui();
-vl();
-// huihui() ───► creates v1 = 78
-//      │
-//      └──► returns inner() ───► remembers v1
-//                                 │
-//                                 └──► console.log(34 + v1)
+
 
 //LEXICAL SCOPING
 //FUNCTION KE ANDER FUNCTION K ANDER FUNCTION OR JO VARIABLE JIS FUNCTION ME BNA H VO VHA SE LEKE END TK OF FUNCTIONS USE HOSKTA H YE H USKI LEXICAL SCOPING
@@ -132,3 +119,18 @@ function uu() {
     console.log(password);
 }) ();//IIFE IS FUNCTION SCOPED SO PASSWORD VARIABLE IS NOT ACCESSIBLE OUTSIDE THE FUNCTION
 //console.log(password);//error password is not defined because it is in IIFE and it is isolated from global scope
+//CLOSURES
+function huihui() {
+    let v1 = 78;
+    return function() {
+        console.log(34 + v1);
+    }
+}
+const vl = huihui();
+vl();
+// huihui() ───► creates v1 = 78
+//      │
+//      └──► returns inner() ───► remembers v1
+//                                 │
+//                                 └──► console.log(34 )
+//CLOSURE IS A FUNCTION THAT REMEMBERS ITS OUTER VARIABLES EVEN AFTER THE OUTER FUNCTION HAS FINISHED EXECUTING
