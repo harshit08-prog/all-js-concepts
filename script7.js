@@ -134,3 +134,19 @@ vl();
 //                                 │
 //                                 └──► console.log(34 )
 //CLOSURE IS A FUNCTION THAT REMEMBERS ITS OUTER VARIABLES EVEN AFTER THE OUTER FUNCTION HAS FINISHED EXECUTING
+   //bmi calculator//wieght/height^2
+function abc(height,weight){
+    let bmi = weight/(height*height);
+    return bmi;
+}
+console.log(abc(1.7,40));
+//reusable discount calculator
+function getDiscount(discount){
+    return function(price){
+        return price - (price * (discount/100));
+    }
+}
+discounter10 = getDiscount(0.1);
+discounter20 = getDiscount(0.2);
+console.log(discounter10(1000));
+console.log(discounter20(1000));
