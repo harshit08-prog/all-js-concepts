@@ -22,5 +22,8 @@ a.shift();
 console.log(a);
 //pushnpop do fast execution than shift unshift
 //splice
-var arr = [11,22,33,44,55];
+var arr = [11,22,33,44,55]
 arr.splice(2,2);
+console.log(arr);
+arr.splice(2,2,44);
+console.log(arr);
