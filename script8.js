@@ -39,3 +39,5 @@ console.log(h[3][2]);
 console.log(h.indexOf(22));
 var j = [[11,22,33],[23,33,,44],[12,34,56]];
 console.log(j[0][2]+j[2][0]+j.length);
+j.reverse();
+console.log(j);
