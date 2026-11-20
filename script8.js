@@ -41,3 +41,6 @@ var j = [[11,22,33],[23,33,,44],[12,34,56]];
 console.log(j[0][2]+j[2][0]+j.length);
 j.reverse();
 console.log(j);
+var t = [21,34,56,789,90,];
+t.sort((a,b)=>a-b);// to sort double digits data in ascending order
+console.log(t);
