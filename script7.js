@@ -68,13 +68,7 @@ let val = ui(89);
 console.log(val) ;
 console.log(val + 24);
 //FIRST CLASS FUNCTIONS
-//TREATING AN ARGUMENTS VALUE AS A FUNCTION
-function uk(v4){
-    v4();
-}
-uk(function () {
-console.log("heyaaaa");
-});
+
 //UK is a higher order function here cuz it accepts a function in parameter
 function yk(){
  return function() {
@@ -107,17 +101,14 @@ function uu() {
 }
 //--------------------IIFE(immediately invoked function expression)--------------------------------------------------------------\\
 //function ko naam mt do bracket m band krke immediately call krdo
-(function () {
-
-}) ()
 //HOISTING HAPPENS IN FUNCTIONS TOO
 // WE CAN CALL  A FUNCTION BEFORE DECLARING IT
 //BUT WE CANNOT CALL A FUNCTION EXPRESSION BEFORE INITIALIZATION  IT WILL SHOW ERROR
 //IIFE IS USED TO MAKE ISOLATE VARIABLES
-(function() {
+(function () {
    const password = "harshie123";
     console.log(password);
-}) ();//IIFE IS FUNCTION SCOPED SO PASSWORD VARIABLE IS NOT ACCESSIBLE OUTSIDE THE FUNCTION
+})();//IIFE IS FUNCTION SCOPED SO PASSWORD VARIABLE IS NOT ACCESSIBLE OUTSIDE THE FUNCTION
 //console.log(password);//error password is not defined because it is in IIFE and it is isolated from global scope
 //CLOSURES
 function huihui() {
@@ -150,3 +141,14 @@ discounter10 = getDiscount(0.1);
 discounter20 = getDiscount(0.2);
 console.log(discounter10(1000));
 console.log(discounter20(1000));
+//lets understand passing functoions as arguments betterly
+function processUser(name, callback) {
+    console.log("Processing user: " + name);
+    callback(name);
+}
+
+function welcome(name) {
+    console.log("welcome",name)
+}
+
+processUser("Aman", welcome);
