@@ -44,3 +44,15 @@ console.log(j);
 var t = [21,34,56,789,90,];
 t.sort((a,b)=>a-b);// to sort double digits data in ascending order
 console.log(t);
+let arr2 = [10,23,45,67,78];
+for(let a = 0; a<arr2.length;a++){
+    console.log(arr2 [a]);//output is array itself because a is working as index of array
+}
+// adding elements by loop in empty array
+var arr1 = [];
+for( let a = 0; a< 100;a++){
+    arr1.push( a + 1);
+}
+console.log(arr1);
+var arr3 = arr2.slice(1,3);
+console.log(arr3);//extracting and copying a portion of array
