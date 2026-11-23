@@ -56,3 +56,7 @@ for( let a = 0; a< 100;a++){
 console.log(arr1);
 var arr3 = arr2.slice(1,3);
 console.log(arr3);//extracting and copying a portion of array
+//concatenation of aarray is also a non mutating method
+var arr4 = arr2.concat(arr3);
+console.log(arr4);
+arr4.concat([1,2,3,4,5]);
