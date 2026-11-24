@@ -64,3 +64,4 @@ arr4.concat([1,2,3,4,5]);
 var arr5 = [1,2,3,4,5];
 console.log(arr5.includes(3));
 console.log(arr5.includes(6));//output given as true or false
+/////
